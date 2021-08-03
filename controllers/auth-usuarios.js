@@ -17,7 +17,7 @@ const crearUsuario = async ( req, res = response ) => {
         }
 
         //Crear usuario con el modelo.
-        motorista = new Usuario( req.body );
+        usuario = new Usuario( req.body );
         //Hashear contrasenia
         const salt = bcrypt.genSaltSync();
         usuario.password = bcrypt.hashSync( password, salt );
