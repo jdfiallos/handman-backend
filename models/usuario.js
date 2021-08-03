@@ -18,7 +18,7 @@ const UsuarioSchema = Schema({
         required: true,
         unique: true
     },
-    adress: {
+    address: {
         type: String,
         required: true
     },

@@ -4,6 +4,8 @@ const cors = require('cors');
 
 const authUsuarios = require('./routes/auth-usuarios')
 
+require('dotenv').config();
+
 let database = require('./db/database');
 var app = express();
 
